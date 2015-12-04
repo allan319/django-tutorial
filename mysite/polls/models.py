@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-
+0.
 # Create your models here.
 
 from django.utils.encoding import python_2_unicode_compatible
@@ -10,6 +10,7 @@ from django.utils.encoding import python_2_unicode_compatible
 class Question(models.Model):
 
     question_text = models.CharField(max_length=200)
+    opinion = models.CharField(max_length=500)
     pub_date = models.DateTimeField('date published')
 
     def was_published_recently(self):
